@@ -11,7 +11,7 @@ maps = list()
 mystats = list()
 
 def fi_search(p_name):
-    header = {'Authorization': 'Bearer 88edf053-5c28-45e6-a661-651f9b237993'}
+    header = {'Authorization': 'Bearer 88edf053-5c28-45e6-a661-651f9b237993'} #my secret key, replace with yours
     p_info_url = 'https://open.faceit.com/data/v4/players?nickname=' + p_name + '&game=csgo'
     r1 = requests.get(p_info_url, headers = header)
     data = r1.json()
